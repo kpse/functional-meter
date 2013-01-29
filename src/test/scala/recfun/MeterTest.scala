@@ -41,12 +41,12 @@ class MeterTest extends FunSuite {
     assert(1.m / 4 == 25.cm)
   }
 
-  test("1m price 5$") {
-    assert(1.m.price == 5.$)
-  }
-
+//  test("1m price 5$") {
+//    assert(price(1.m) == 5.$)
+//  }
+//
 //  test("1cm price 2$") {
-//    assert(1.cm.price == 2.$)
+//    assert(price(1.cm) == 2.$)
 //  }
 
 }

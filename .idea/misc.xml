@@ -5,6 +5,11 @@
       <BSFConsoleSearchOptions />
     </option>
   </component>
+  <component name="EclipseCodeFormatter">
+    <option name="defaultSettings" value="true" />
+    <option name="id" value="1359426975971" />
+    <option name="name" value="default" />
+  </component>
   <component name="IdProvider" IDEtalkID="7B5D6328388394EED6F2E0F016BECDB9" />
   <component name="ProjectResources">
     <default-html-doctype>http://www.w3.org/1999/xhtml</default-html-doctype>
