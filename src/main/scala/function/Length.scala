@@ -1,4 +1,4 @@
-package recfun
+package function
 
 
 object extendBuiltins extends App {

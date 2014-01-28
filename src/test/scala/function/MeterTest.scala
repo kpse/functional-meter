@@ -1,10 +1,10 @@
-package recfun
+package function
 
 import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
 
-import recfun.extendBuiltins._
+import function.extendBuiltins._
 
 @RunWith(classOf[JUnitRunner])
 class MeterTest extends FunSuite {

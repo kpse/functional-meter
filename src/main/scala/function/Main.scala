@@ -1,4 +1,4 @@
-package recfun
+package function
 
 import common._
 
