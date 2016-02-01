@@ -5,7 +5,7 @@ import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
 
 import function.Dollar._
-import function.Length._
+import function.LengthSuffix._
 
 @RunWith(classOf[JUnitRunner])
 class MeterTest extends FunSuite {
@@ -42,9 +42,9 @@ class MeterTest extends FunSuite {
     assert(1.m / 4 == 25.cm)
   }
 
-//  test("1m price 5$") {
-//    assert(price(1.m) == 5.$)
-//  }
+  test("1m price 5$") {
+    assert(1.m.price == 5.$)
+  }
 //
 //  test("1cm price 2$") {
 //    assert(price(1.cm) == 2.$)

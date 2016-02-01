@@ -5,9 +5,9 @@ case class Dollar(n: Double) {
 }
 
 object Dollar {
-  def meter_price(length: Double) = length * 5
-  def centimeter_price(length: Double) = length * 2
-  def millimeter_price(length: Double) = length * 1
+  def meterPrice(length: Double) = length * 5
+  def centimeterPrice(length: Double) = length * 2
+  def millimeterPrice(length: Double) = length * 1
 
   def to_$(n: Double) = n
 
