@@ -4,7 +4,8 @@ import org.junit.runner.RunWith
 import org.scalatest.FunSuite
 import org.scalatest.junit.JUnitRunner
 
-import function.extendBuiltins._
+import function.Dollar._
+import function.Length._
 
 @RunWith(classOf[JUnitRunner])
 class MeterTest extends FunSuite {

@@ -2,3 +2,5 @@ target
 target/.history
 .idea
 bin
+.DS_Store
+progfun-recfun.iml
