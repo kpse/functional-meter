@@ -1,15 +1,12 @@
 package function
 
-case class Dollar(n: Double) {
-  def $ = Dollar.to_$(n)
+case class Dollar(n: Double)
+
+case class DollarSuffix(n: Double) {
+  def $: Dollar = Dollar(n)
 }
 
-object Dollar {
-  def meterPrice(length: Double) = length * 5
-  def centimeterPrice(length: Double) = length * 2
-  def millimeterPrice(length: Double) = length * 1
-
-  def to_$(n: Double) = n
-
-  implicit def d2Dollar(n: Double): Dollar = new Dollar(n)
+object DollarSuffix {
+  implicit def d2Dollar(n: Double): DollarSuffix = DollarSuffix(n)
+  implicit def Int2Dollar(n: Int): DollarSuffix = d2Dollar(n)
 }

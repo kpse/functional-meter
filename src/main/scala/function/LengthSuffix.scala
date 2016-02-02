@@ -1,28 +1,22 @@
 package function
 
 case class Length(milli: Double) {
-  def price = 5
+  def price: Dollar = Dollar(0.005 * milli)
   def +(other: Length) = Length(milli + other.milli)
   def -(other: Length) = Length(milli - other.milli)
   def *(times: Double) = Length(milli * times)
   def /(parts: Double) = Length(milli / parts)
 }
 case class LengthSuffix(n: Double) {
-  def m = LengthSuffix.fromM(n)
+  def m = Length(1000 * n)
 
-  def cm = LengthSuffix.fromCM(n)
+  def cm = Length(10 * n)
 
-  def mm = LengthSuffix.fromMM(n)
+  def mm = Length(n)
 }
 
 object LengthSuffix {
-  def fromM(meter: Double) = Length(1000 * meter)
-
-  def fromCM(centi: Double) = Length(10 * centi)
-
-  def fromMM(milli: Double) = Length(milli)
-
-  implicit def d2Meter(n: Double): LengthSuffix = new LengthSuffix(n)
-
+  implicit def d2Meter(n: Double): LengthSuffix = LengthSuffix(n)
+  implicit def Int2Meter(n: Int): LengthSuffix = d2Meter(n)
 }
 
